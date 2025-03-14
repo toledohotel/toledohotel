@@ -2,97 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Menu</title>
-    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=dLnuNY4403Ab9QMuuxx7sI3YUUPYUNE3RoeYJGyIK56Eg6OpjPdEUBi74RvKocUGz7tpsftdAWn6JziOFec577QhzCoCdITG67xmChRizNA" charset="UTF-8"></script><style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=yYQDJ45TitXKY6PFf9S0LCeJkOOPqP3a8fBljnAAt70V-OPDtIfphV2ae3q9MMSVcQfDZ-iZBWWNRtCtWsDWRKRZblh3ndbY5eUTqYWCjLB-GWdQFA78LNZKdtje3SbH" charset="UTF-8"></script><style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url( );
-            background-color: #fdf1dc;
+            background-color: #f8f9fa;
             margin: 0;
             padding: 0;
-            color: #000;
-            position:initial;
-    
+            text-align: center;
         }
-        .menu-container {
-            width: 80%;
-            max-width: 800px;
-            background-color: rgba(255, 255, 255, 0.9);
+        .container {
+            max-width: 100%;
             padding: 20px;
-            margin: 30px auto;
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            text-align: ;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            position: relative;
         }
-        h1 {
-            text-align: center;
-            font-size: 32px;
-            color: navy;
-            margin-bottom: 15px;
+        .logo img {
+            width: 160px;
+            height: auto;
         }
-        h2 {
-            font-size: 22px;
-            color: red;
-            margin-bottom: 5px;
+        .language-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
         }
-        .section-title {
-            color: darkred;
-            font-weight: bold;
-            font-size: 18px;
-            margin-top: 20px;
-            margin-bottom: 5px;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 15px;
+            justify-content: center;
         }
-        .menu-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 4px 0;
-            font-size: 16px;
+        .grid a {
+            text-decoration: none;
+            color: black;
         }
-        .menu-item span {
-            flex: 1;
+        .grid img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
         }
-        .price {
-            text-align: right;
-            font-weight: bold;
+        .grid img:hover {
+            transform: scale(1.1);
         }
-        .footer {
-            text-align: center;
-            margin-top: 10px;
-            font-size: 14px;
-            font-style: italic;
-        }
-        .description {
-            font-style: italic;
-            font-size: 14px;
-            margin: 0 0 5px 0;
-            color: #555;
-        }
-        .buttons {
-            margin-top: 20px;
-        }
-        button {
-            padding: 10px 20px;
-            border: none;
-            background-color: #1e365d;
+        .marquee {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
             color: white;
-            cursor: pointer;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .social-icons a {
+            font-size: 24px;
+            color: #555;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #007BFF;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background: #007BFF;
+            color: white;
             border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-<div class="menu-container">
-<center><a href="https://toledohotel.jo"><img src="logo.png" width="160" height="55" alt="Toledo Hotel Logo"></a></center>
-<br>
-    <h1>Coming Soon</h1>
-<center>
-    <table border="0">
-      <tr>
-      <td align="center"><img border="1" src=" " width="" height=""></td>
-      </tr>
-          </center>
+     <div class="container">
+              <div class="logo">
+            <a href="https://toledohotel.jo">
+                <img src="logo.png" alt="Toledo Hotel Logo">
+            </a>
+        </div>
+        
+        <div class="grid">
+            <a href="email.html">
+                <img src="email.png" alt="Email">
+                <p>Emails</p>
+            </a>
+            <a href="setting.html">
+                <img src="emailsettings.jpg" alt="Emails Configure Logo">
+                <p>Emails Configure</p>
+            </a>
 
-	</table>
+          <a href="domain.html">
+                <img src="domain.png" alt="domain logo">
+                <p>Domain & Host</p>
+            </a>
+          <a href="ports.html">
+                <img src="cctv.png" alt="Ports logo">
+                <p>CCTV & Finger Print Ports </p>
+            </a>
+        </div>
+        
+       
+        
 </body>
-</html> 
+</html>
